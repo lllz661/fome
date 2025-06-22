@@ -1,0 +1,175 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.content {
+    flex-grow: 1;
+  }
+img {
+    user-select: none;
+}
+.top {
+    height: 775px;
+    background-image: url(./pictures/top-back.svg);
+    background-size: cover;
+}
+
+.top__text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar {
+    padding-top: 32px;
+}
+
+.navbar-nav .active {
+    font-weight: bold;
+    color: #EA482B !important;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #382D16;
+}
+
+.text {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* Стили для блока обо мне */
+
+.about {
+    background: #F1F1F4;
+    min-height: 504px;
+}
+
+/* Стили для блока почему мне нравится программировать */
+
+.why {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.card {
+    border: none;
+}
+
+.card-box {
+    height: 115px;
+}
+
+/* Стили для Подвала сайта */
+
+.footer {
+    background: #382D16;
+    height: 216px;
+    padding-top: 56px;
+    color: white;
+}
+  
+/* Стили для страницы Блог */
+
+.blog-body {
+    background: #F1F1F4;
+}
+
+.blog-heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #382D16;
+}
+
+.blog-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    color: #382D16;
+}
+
+.blog-content {
+    padding: 2rem;
+}
+
+.blog-card {
+    border-radius: 16px;
+    height: 100%;
+}
+
+/* Стили для страницы Контакты */
+
+.contacts-top {
+    min-height: 639px;
+    background: #F1F1F4;
+}
+
+.contacts-info {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+/* Вкладки проектов */
+
+.tab-btn {
+    padding: 12px 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #F1F1F4;
+    color: #382D16;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tab-btn:hover {
+    background-color: #e6e6ea;
+  }
+  
+  .tab-btn.active {
+    background-color: #EA482B;
+    color: #fff;
+  }
+  
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+      
+  }
+  .tab-content .card {
+    width: 100%;
+    min-width: 300px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
